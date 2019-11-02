@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>TITLE</title>
+    <title>Portfolio Insurance</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
@@ -29,7 +29,7 @@
       <div class="slides">
 	<section>
 	  <section data-background-image="./city_skyline.jpg">
-	    <h2>TITLE</h2>
+	    <h2>Portfolio Insurance</h2>
 	    <br>
 	    <br>
 	    <br>
@@ -38,7 +38,7 @@
 	    <br>
 	  </section>
 	  <section>
-	    <h2>TITLE</h2>
+	    <h2>Portfolio Insurance</h2>
 	    <br>
 	    <p> MATT BRIGIDA </p>
 	    <p> Associate Professor of Finance (SUNY Polytechnic Institute) & Financial Education Advisor, Milken Institute Center for Financial Markets</p>
@@ -62,11 +62,68 @@
 	</section>
 
 	<section>
+	  <h3>Local Protective Put Replication</h3>
+	  <p align="left">The approach taken by portfolio insurance <span class="fragment highlight-green">is simply to replicate the protective put over a small set of underlying portfolio values</span>. That is we replicate the protective put <span class="fragment highlight-green">locally</span>.</p>
+	  <ul>
+	    <li>But since our approach will only work locally, we'll have to constantly rebalance it for it to work <span class="fragment highlight-green">globally</span>, i.e. over every value of the underlying portfolio.</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>An Example</h3>
+	  <p align="left">Say we have a portfolio worth \$100, and we want to ensure we don't lose more than \$20 over the next year.</p>
+	  <ul>
+	    <li>We want a put option on the portfolio with an \$80 exercise price.</li>
+	    <li>Assuming no such put option exists, we'll employ portfolio insurance.</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Locally What Does a Protective Put Mean</h3>
+	  <p align="left">While we can't buy the put we want, we can still calculate the <a href="https://www.5minutefinance.org/concepts/the-greeks">Greeks</a> for the put option.</p>
+	  <ul>
+	    <li>Using the Delta app at the above link, we can see the Delta is -0.09 (assuming 20% volatility, and a 2% risk-free rate).</li>
+	    <li>This means if <span class="fragment highlight-red">our portfolio falls by \$1</span>, then the <span class="fragment highlight-green">put would increase by \$0.09</span>, and the <span class="fragment highlight-red">total change in a protective put position would be -\$0.91</span>.</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Recreating the Protective Put</h3>
+	  <p align="left">What if we simply sold 9% of our portfolio and held it in cash?</p>
+	  <ul>
+	    <li>Then we would hold \$91 of the portfolio, and if it went down by \$1 we would lose -$0.91.</li>
+	    <li>So, locally, the protective put is equivalent to selling 9% of our portfolio.</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Rebalancing</h3>
+	  <p align="left">This only works locally because as the portfolio value changes, the put's Delta also changes.</p>
+	  <ul>
+	    <li>If the portfolio's value is \$99, then the put's Delta is -0.10.</li>
+	    <li>So to recreate the protective put we now have to sell \$1 of our portfolio, so we have \$90 in the portfolio and \$10 in cash.</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Rebalancing Again</h3>
+	  <p align="left"></p>
+	</section>
+
+
+	<section>
+	  <h3>How Often Should You Rebalance?</h3>
+	  <p align="left">Look at the options Gamma (which is the rate of change in the Delta).</p>
+	</section>
+
+	
+
+	
+	<section>
 	  <h3></h3>
 	  <p align="left"></p>
 
 	</section>
-
 
 
 <!-- Insert App -->
