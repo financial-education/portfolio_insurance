@@ -113,12 +113,29 @@
 
 	<section>
 	  <h3>How Often Should You Rebalance?</h3>
-	  <p align="left">Look at the options Gamma (which is the rate of change in the Delta).</p>
+	  <p align="left">Look at the options Gamma (which is the rate of change in the Delta).  The greater the gamma, the more often you have to rebalance.  Note, gamma tends to be greatest at the money.</p>
+    <ul>
+      <li>See <a href="">this presentation</a> for an interactive app to calculate gamma.</li>
+    </ul>
 	</section>
 
-	
 
-	
+	<section>
+	  <h3>Momentum</h3>
+	  <p align="left">Employing portfolio insurance</p>
+
+	</section>
+
+	<section>
+	  <h3>Taxes</h3>
+	  <p align="left">To implement portfolio insurance on your portfolio, you must buy/sell the portfolio.</p>
+    <ul>
+      <li>Selling part of your portfolio may realize a taxable capital gain.</li>
+      <li>Thus portfolio insurance may be more appropriate in a tax-shielded account.</li>
+    </ul>
+	</section>
+
+
 	<section>
 	  <h3></h3>
 	  <p align="left"></p>
@@ -157,7 +174,7 @@
   Reveal.initialize({
 
   transition: 'convex',
-  
+
   <!-- menu: { -->
   <!-- 	// Specifies which side of the presentation the menu will  -->
   <!-- 	// be shown. Use 'left' or 'right'. -->
@@ -268,10 +285,10 @@
   <!-- }, -->
 <!-- end audio section -->
 
-  
-  chalkboard: { 
+
+  chalkboard: {
   src: null,
-  readOnly: undefined, 
+  readOnly: undefined,
   toggleChalkboardButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
   toggleNotesButton: { left: "150px", bottom: "30px", top: "auto", right: "auto" },
   },
