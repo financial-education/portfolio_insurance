@@ -168,17 +168,17 @@
   -->
 
 <section>
-  <p align="center">Risk Taken (scale from 0 to 100):</p>
+  <p align="center" class="fragment highlight-green">Portfolio Insurance (Put Strike) at $50</p>
 <div class="slidecontainer">
   <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
 </div>
-  <p align="center">Risk: <span id="demo"></span></p>
+  <p align="center">Portfolio Value: <span id="demo"></span></p>
 <button onclick="myJsFunction()">Calculate</button>
 
     <script src="src/app1.js"></script>
 
-    <p>Stock Price = $<span id="out1"></span></p>
-    <p>Cash Flows = $<span id="out2"></span></p>
+    <p>Put Delta = <span id="out1"></span></p>
+    <p>Put Gamma = <span id="out2"></span></p>
 </section>
 
 
